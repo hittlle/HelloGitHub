@@ -1,0 +1,17 @@
+This is a test project
+
+This project tries to implement a general-purpose state machine. It uses XML to describe the triples used in a state machine(state, event and action). A sample XML file may go this way,
+	<groups>
+		<group>
+			<state>Unspecified</state>
+			<event>InitReq</event>
+			<action>DoInit</action>
+			<new-state>Initialized</new-state>
+		</group>
+		<group>
+			<state>Initialized</state>
+			<event>StartReq</event>
+			<action>DoStart</action>
+			<new-state>Started</new-state>
+		</group>
+	</groups>
